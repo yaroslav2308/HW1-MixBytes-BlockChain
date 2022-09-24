@@ -1,7 +1,7 @@
 # HW1-MixBytes-BlockChain
 
 Git diff of first task:
-
+```
 function submitTransaction(address destination, uint value, bytes data)
      public
      returns (uint transactionId)
@@ -10,4 +10,5 @@ function submitTransaction(address destination, uint value, bytes data)
      transactionId = addTransaction(destination, value, data);
      confirmTransaction(transactionId);
  }
+```
  
