@@ -11,4 +11,11 @@ function submitTransaction(address destination, uint value, bytes data)
      confirmTransaction(transactionId);
  }
 ```
+Git diff of second task:
+```
+function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual 
+{ 
+    require((block.timestamp / 86400 + 4) % 7 != 5, "it is not allowed to transfer token on a Saturday");
+}
+```
  
